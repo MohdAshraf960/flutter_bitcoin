@@ -1,4 +1,3 @@
-import 'package:flutter/material.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 import 'package:logger/logger.dart';
 import 'package:dio/dio.dart';
@@ -104,7 +103,7 @@ class DioClient {
         if (response.data == null) {
           return;
         } else {
-          debugPrint("POST $uri ==> ${response.data}");
+          // debugPrint("POST $uri ==> ${response.data}");
           return response.data;
         }
       } else {
@@ -139,7 +138,7 @@ class DioClient {
         if (response.data.isEmpty) {
           return;
         } else {
-          debugPrint("${response.data}");
+          // debugPrint("${response.data}");
 
           return response.data;
         }
